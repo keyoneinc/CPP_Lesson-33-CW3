@@ -13,12 +13,14 @@ namespace Mobile {
 	public:
 		Plan();
 		Plan(string name);
+		virtual ~Plan() {};
 
 		void setName(string name);
 		string getName() const;
 
 		virtual void showInfo() const = 0;
 		virtual double calcPrice(int seconds) const = 0;
+
 
 
 
