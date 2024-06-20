@@ -30,6 +30,9 @@
     <ClCompile Include="Provider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Consumer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Plan.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MobileException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Consumer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
