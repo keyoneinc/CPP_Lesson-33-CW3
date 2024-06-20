@@ -130,11 +130,13 @@
     <ClCompile Include="cw33-task3.cpp" />
     <ClCompile Include="MinutesPlan.cpp" />
     <ClCompile Include="Plan.cpp" />
+    <ClCompile Include="Provider.cpp" />
     <ClCompile Include="SecondsPlan.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MinutesPlan.h" />
     <ClInclude Include="Plan.h" />
+    <ClInclude Include="Provider.h" />
     <ClInclude Include="SecondsPlan.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
