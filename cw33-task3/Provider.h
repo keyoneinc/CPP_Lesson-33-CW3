@@ -19,7 +19,9 @@ namespace Mobile {
 		string getName() const;
 
 		void addPlan(Plan* obj);
+		void showList() const;
 
+		const Plan* operator[] (string name);
 
 	};
 }
