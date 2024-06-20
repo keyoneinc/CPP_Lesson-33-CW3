@@ -31,5 +31,8 @@ void Mobile::MinutesPlan::showInfo() const
 
 double Mobile::MinutesPlan::calcPrice(int seconds) const
 {
+	if (seconds < 0) {
+		throw new SecondsException();
+	}
 	return priceOfMinute * (seconds / 60);
 }

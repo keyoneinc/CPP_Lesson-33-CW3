@@ -18,6 +18,17 @@ int main() {
 
     cout << "---------------------------------" << endl;
 
-    
+    const Mobile::Plan* obj = Vodafone["Student"];
+    if (obj != nullptr) {
+        obj->showInfo();
+        cout << "Price for 70 seconds: " << obj->calcPrice(70) << endl;
+        try {
+            cout << "Price for -70 seconds: " << obj->calcPrice(-70) << endl;
+        }
+        catch (const exception* em) {
+            cout << em->what() << endl;
+        }
+    }
+
 
 }
