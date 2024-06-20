@@ -7,7 +7,17 @@ int main() {
     Vodafone.addPlan(new Mobile::MinutesPlan("Red Mini", 0.5));
     Vodafone.addPlan(new Mobile::SecondsPlan("Red Maxi", 0.05));
     Vodafone.addPlan(new Mobile::MinutesPlan("Red Top", 0.3));
+    try {
+        Vodafone.addPlan(new Mobile::SecondsPlan("Test", -1));
+    }
+    catch (const exception* obj) {
+        cout << obj->what() << endl;
+    }
 
     Vodafone.showList();
+
+    cout << "---------------------------------" << endl;
+
+    
 
 }

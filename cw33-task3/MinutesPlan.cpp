@@ -5,8 +5,11 @@ Mobile::MinutesPlan::MinutesPlan()
 	priceOfMinute = 0;
 }
 
-Mobile::MinutesPlan::MinutesPlan(string name, float priceOfMinute)
+Mobile::MinutesPlan::MinutesPlan(string name, float priceOfMinute) : Plan(name)
 {
+	if (priceOfMinute < 0) {
+		throw new PriceException();
+	}
 	this->priceOfMinute = priceOfMinute;
 }
 

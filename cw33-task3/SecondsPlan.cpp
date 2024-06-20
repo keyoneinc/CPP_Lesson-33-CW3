@@ -5,9 +5,11 @@ Mobile::SecondsPlan::SecondsPlan()
     priceOfSecond = 0;
 }
 
-Mobile::SecondsPlan::SecondsPlan(string name, float priceOfSecond)
+Mobile::SecondsPlan::SecondsPlan(string name, float priceOfSecond) : Plan(name)
 {
-    this->name = name;
+    if (priceOfSecond < 0) {
+        throw new PriceException();
+    }
     this->priceOfSecond = priceOfSecond;
 }
 

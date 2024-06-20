@@ -30,3 +30,9 @@ public:
 
 };
 
+class PriceException : public MobileException {
+public:
+	virtual char const* what() const override {
+		return "Price can't be negative!";
+	};
+};

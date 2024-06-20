@@ -7,6 +7,9 @@ Mobile::Plan::Plan()
 
 Mobile::Plan::Plan(string name)
 {
+    if (name.size() < 2) {
+        throw new NameException();
+    }
     this->name = name;
 }
 
