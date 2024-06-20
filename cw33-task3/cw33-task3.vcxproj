@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cw33-task3.cpp" />
+    <ClCompile Include="MinutesPlan.cpp" />
     <ClCompile Include="Plan.cpp" />
     <ClCompile Include="SecondsPlan.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MinutesPlan.h" />
     <ClInclude Include="Plan.h" />
     <ClInclude Include="SecondsPlan.h" />
   </ItemGroup>
