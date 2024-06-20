@@ -8,12 +8,12 @@ Mobile::Consumer::Consumer()
 	plan = nullptr;
 }
 
-Mobile::Consumer::Consumer(string name, string phone, double cash, Plan* plan)
+Mobile::Consumer::Consumer(string name, string phone, double cash, const Plan* plan)
 {
 	this->name = name;
 	this->phone = phone;
 	this->cash = cash;
-	this->plan = plan;
+	this->plan = (Plan*) plan;
 }
 
 void Mobile::Consumer::showInfo() const

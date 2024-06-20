@@ -10,7 +10,7 @@ namespace Mobile {
 
 	public:
 		Consumer();
-		Consumer(string name, string phone, double cash, Plan* plan);
+		Consumer(string name, string phone, double cash, const Plan* plan);
 
 		void showInfo() const;
 		void makeCall(int seconds);

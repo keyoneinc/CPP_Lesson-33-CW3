@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Provider.h"
+#include "Consumer.h"
 
 int main() {
     Mobile::Provider Vodafone("Vodafone");
@@ -29,6 +30,9 @@ int main() {
             cout << em->what() << endl;
         }
     }
+
+    Mobile::Consumer Alexey("Alexey", "+1234", 200, Vodafone["Red Maxi"]);
+
 
 
 }
